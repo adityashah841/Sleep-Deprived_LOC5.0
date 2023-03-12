@@ -11,6 +11,9 @@ try:
         if GPIO.input(PIR_pin):
             print('motion Detected')
             time.sleep(1)
+        else:
+            print("motion stopped")
+            time.sleep(1)
         time.sleep(0.1)
 except KeyboardInterrupt:
     print('Quit')
